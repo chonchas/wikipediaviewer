@@ -15,7 +15,7 @@ $(document).ready(function(){
 			success: function(data){
 				$("#output").html('')
 				for(var i = 0; i< data[1].length;i++ ){
-				$("#output").append('<a href="'+data[3][i]+'" target="_blank"><li class="info-cont card hvr-grow animated fadeInUp"> 	<p class="title" id="title" style="color: black">' + data[1] [i] + '	</p> <p id="content" style="color: red">' + data[2] [i] + '	</p> </li></a>');
+				$("#output").append('<a class="animated fadeInUp" href="'+data[3][i]+'" target="_blank"><li class="info-cont card hvr-grow"> 	<p class="title" id="title" style="color: black">' + data[1] [i] + '	</p> <p id="content" style="color: red">' + data[2] [i] + '	</p> </li></a>');
 
 				}
 			}, 
